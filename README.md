@@ -9,4 +9,6 @@ the players will have a relationship with the ratings.
 ![site map](~\OneDrive\Desktop\School\Software_Quality_Control\sqc-project-GraysonHoff\docs\sketch.png)
 ![ratings page](~\OneDrive\Desktop\School\Software_Quality_Control\sqc-project-GraysonHoff\docs\ratingspage.png)
 ![games page](~\OneDrive\Desktop\School\Software_Quality_Control\sqc-project-GraysonHoff\docs\gamespagescketch.png)
+<br>
+#### Render link
 https://dashboard.render.com/web/srv-cflil5ha6gdjlmp8f49g/deploys/dep-cflil9ha6gdjlmp8g67g
