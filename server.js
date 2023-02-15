@@ -7,7 +7,7 @@ express()
   .use(express.static(path.join(__dirname, 'public')))
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
-  .set('views', path.join(__dirname, 'views'))
+  .set('views', path.join(__dirname, 'view'))
   .set('view engine', 'ejs')
 
 // step 4
