@@ -12,6 +12,7 @@ express()
 
 // step 4
   .get('/health', function (req, res) {
+    // res.render('pages/health')
     res.status(200).send('Healthy')
   })
 

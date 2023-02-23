@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine",
+    "coverage": "nyc npm test",
+    "lint": "mkdir -p tmp && pushd views/pages && npx ejs -f ../../spec/support/ejs.json index.ejs -o ../../tmp/index.html && npx ejs -f ../../spec/support/ejs.json story.ejs -o ../../tmp/story.html && popd && vnu tmp/*.html && npx eslint \"**/*.js\" \"**/*.html\" && npx stylelint tmp/*.html \"**/*.css\" && rm -rf tmp/*"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,9 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jasmine": "^4.5.0",
+    "nyc": "^15.1.0"
   }
 }
