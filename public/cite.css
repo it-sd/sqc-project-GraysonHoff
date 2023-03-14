@@ -8,3 +8,7 @@ div {
   display: block;
   text-align: center;
 }
+
+* {
+  background-color: beige
+}
