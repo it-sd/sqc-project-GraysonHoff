@@ -26,4 +26,12 @@ express()
     res.render('pages/about')
   })
 
+  .get('/SUS', function (req, res) {
+    res.render('pages/SUS')
+  })
+
+  .get('/dangerSus', function (req, res) {
+    res.render('pages/dangerSus')
+  })
+
   .listen(PORT, () => console.log(`Listening on ${PORT}`))

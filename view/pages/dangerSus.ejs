@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DANGERSUS</title>
+</head>
+<body>
+
+  <script>
+
+const images = ['og-image.webp', 'are_you_a_sussy_baka-f.jpg',
+  'sussy-among-us.gif', 'sussy-baka-sus.gif',
+  'indexs.jpg', 'maxresdefault.jpg', '1af.gif',
+  '6471239_sd.png', 'EsT9A0DW8AEZA9P.png', 'imagestwo.jpg',
+  'maxresdefault.png', 'stsmall507x507-pad600x600f8f8f8.png',
+  'sussy-among-us-20269570.png', 'indexs.png', 'longsus.png',
+  'buttmongus.jpg', 'twogirlsoneknife.jpg', 'generatorroomsus.jpg',
+  'amongusastro.jpg', 'bigbehing.jpg', 'girlamongusface.jpg',
+  'sussythreeam.jpg', 'mongusbowl.jpg', 'amongusthunder.jpg',
+  'almostamongus.jpg', 'dirtkillmongus.jpg', 'sussysus.jpg',
+  'screamplayamongus.jpg', 'firstanimeamongus.jpg',
+  'bigstrongamongus.jpg', 'secondamongusanime.jpg',
+  'amongussupersane.jpg', 'couchmongus.jpg', 'garbagemongus.jpg',
+  'confusingsus.jpg', 'amongusholdup.jpg', 'markyamongus.jpg',
+  'markyskin.jpg', 'pixelartamongus.jpg', 'yousus.jpg',
+  'nailamongus.jpg', 'uglyamongus.jpg', 'playingsusamongus.jpg',
+  'sussycheeto.jpg', 'cursedamongus.jpg', 'firemanamongus.jpg',
+  'zeldaamongus.jpg', 'peepeeamongus.jpg', 'ithinkcursed.jpg',
+  'highleg.jpg', 'callingamongus.png'
+]
+
+console.log(images)
+console.log(`So far there are ${images.length} among us background images`)
+
+function backgroundChange () {
+  let imageToPick = 0
+  setInterval(function () {
+    document.body.style.backgroundImage = `url('/public/backgrounds/${images[imageToPick]}')`
+    imageToPick = (imageToPick + 1) % images.length
+  }, 400)
+}
+
+backgroundChange()
+
+  </script>
+
+</body>
+</html>
