@@ -37,9 +37,9 @@ console.log(`So far there are ${images.length} among us background images`)
 function backgroundChange () {
   let imageToPick = 0
   setInterval(function () {
-    document.body.style.backgroundImage = `url('/public/backgrounds/${images[imageToPick]}')`
+    document.body.style.backgroundImage = `url('/backgrounds/${images[imageToPick]}')`
     imageToPick = (imageToPick + 1) % images.length
-  }, 400)
+  }, 60)
 }
 
 backgroundChange()
