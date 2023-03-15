@@ -35,3 +35,10 @@ express()
   })
 
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
+
+function addTwoNumbers (number1, number2) {
+  const finalOutput = number1 + number2
+  return finalOutput
+}
+
+module.exports = { addTwoNumbers }
