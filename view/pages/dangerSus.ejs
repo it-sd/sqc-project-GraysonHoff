@@ -39,7 +39,7 @@ function backgroundChange () {
   setInterval(function () {
     document.body.style.backgroundImage = `url('/backgrounds/${images[imageToPick]}')`
     imageToPick = (imageToPick + 1) % images.length
-  }, 60)
+  }, 75)
 }
 
 backgroundChange()
